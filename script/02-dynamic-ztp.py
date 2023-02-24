@@ -4,7 +4,7 @@ import re
 import json
 import urllib2
 
-CONFIG_SERVER='10.10.10.151'
+CONFIG_SERVER='10.13.2.150:1880'
 
 USER="cisco"
 PASSWORD="cisco"
