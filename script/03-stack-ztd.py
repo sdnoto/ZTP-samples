@@ -7,7 +7,7 @@ import sys
 
 CONFIG_SERVER='10.10.10.151'
 
-USER="cisco"
+USER="nohsadmin"
 PASSWORD="cisco"
 ENABLE="cisco"
 
@@ -15,7 +15,7 @@ def log(message, severity):
     cli('send log %d "%s"' % (severity, message))
 
 def base_config():
-    configure(['hostname adam-ztd'])
+    configure(['hostname pod-ztd'])
     configure(['username {} privilege 15 password {}'.format(USER,PASSWORD)])
     configure(['enable secret {}'.format(ENABLE)])
     configure(['line vty 0 4', 'login local'])
